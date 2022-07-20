@@ -116,3 +116,99 @@ void main() {
  print("mod: $h");
 
 }
+
+
+//is-!is operatörü
+//Operatörler
+void main() {
+String a="abc";
+double b=12.4;
+print(a is String);
+print(b is !int);
+
+}
+
+//7- büyük küçüktür operatörleri
+//Operatörler
+void main() {
+int a=5;
+int b=10;
+var c=a>b;
+print(c);
+var d=a<b;
+print(d);
+var e=a>=b;
+print(e);
+var f=a<=b;
+print(f);
+var g=a==b;
+print(g);
+
+}
+
+// or-and
+//Operatörler
+void main() {
+int a=15;
+int b=10;
+// ve ve veya operatörleri
+var c=a>b && a==b;
+var d=a>b || a==b;
+print(c);
+print(d);
+
+}
+
+
+// ? operatörü
+//Operatörler
+void main() {
+//? operatörü:
+// if true false yapısıdır.
+
+var a=10;
+var b=20;
+var c=(a>b)?"ilk sayı büyük":"ikinci sayı büyük";
+print(c);
+  
+}
+
+//cascade .. operatörü: noktalı virgül 
+// ile nesnenin kullanılması.
+
+class Deneme
+{
+  var a;
+  var b;
+  
+  void set(x,y)
+  {
+    this.a=x;
+    this.b=y;
+  }
+  
+  void add()
+  {
+    var z=this.a+this.b;
+    print(z);
+  }
+}
+
+
+//Operatörler
+void main() {
+
+  Deneme a1=new Deneme();
+  Deneme a2=new Deneme();
+  
+  
+  // cascadesiz
+  a1.set(1,2);
+  a1.add();
+  
+  
+  // cascade ile; aynı nesnenin adı kullanılmadan çalıştırılması.
+  a2..set(3,4)
+  ..add();
+  
+}
