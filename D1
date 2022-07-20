@@ -62,3 +62,37 @@ void main() {
   print(yap);
 
 }
+//5-
+//String ekleme ve birleştirme işlemleri
+void main() {
+ //string birleştirme işlemleri
+ // + operatörü
+ // interpolasyon
+ // string yanyana yazma
+ // ve .joins ile yapılır.
+  
+  //1- + operatörü: standart
+  String a="Ben yalnızım";
+  String b="Ben birleştiriciyim";
+  String c=a+b;
+  print(c);
+  print(a+b+a+a);
+  //2- interpolasyon $ işareti ile yerine koyma % gibi
+  print('$a$b$a');
+  print('$c $a');
+  
+  //3-string ifadeleri birlikte yazma
+  print("bbb""aaa""ccc");
+  
+  //4-.join ifadesi ile liste 
+  // yapısındaki stringlerin string yapısına dönüştürülmesi mümkündür.
+  List<String> yazi=["Uğur","Güven","Adar"];
+  String yapi=yazi.join();
+  print(yapi);
+  String y2=yazi.join(" ");
+  print(y2);
+    
+
+}
+
+//6-
