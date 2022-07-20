@@ -27,3 +27,38 @@ void main() {
 
 //3- Dynamic veri tipi
 // Dynamic veri tipi python based çalışır. Değişken tipi castinge ihtiyaç duymadan aldığı veri tipi esasınca şekillenir.
+//Dart değişken tipleri
+void main() {
+  
+  //dynamic, var ile aynı mantıkta sonuç verse de
+  // temelde dynamic, değişkeni atadığın anda uygun veri tipine çevirir
+  var deneme="a";
+  print(deneme);
+  var deneme2=12.4;
+  print(deneme2);
+  
+  dynamic bosVeri="ahmet";
+  print(bosVeri);
+  bosVeri=12.4;
+  print(bosVeri);
+  
+}
+
+//4- Dart const ve final ifadeleri
+//Final ve const ifadeleri
+void main() {
+  // final ve const sabit ifadelerin yazılmasında kullanılır.
+  // read only değişkenler olarak düşünülebilir. 
+  // farklılık olarak veritipi belirtilmeden de değişken oluşturulabilir.
+  final pi=3.14;
+  final deger="değişmez";
+  print(pi);
+  print(deger);
+  final String ifade="değişmez ama veritip var.";
+  print(ifade);
+  const d=1234;
+  print(d);
+  const bool yap=true;
+  print(yap);
+
+}
