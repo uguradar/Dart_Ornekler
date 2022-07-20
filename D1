@@ -1,0 +1,29 @@
+//1- Hi World
+void main()
+{
+  print("Selam Dünyalı!");
+}
+
+//2- Değişkenler ve özellikleri
+//Dart değişken tipleri
+void main() {
+  
+  //dartta temel veri tipleri:
+  // int, double, float, boolean,list, maps, string , dynamic
+  // char ? var mı bilmiyoruz. 
+  // değişken tanımlanırsa null ekler.
+  int sayi=10;
+  double virgullu=12.4;
+  bool dogruMu=true;
+  String ifade="Yazıyım";
+  String tekIfade="a";
+  print(sayi);
+  print(virgullu);
+  print(dogruMu);
+  print(ifade);
+  print(tekIfade);
+  
+}
+
+//3- Dynamic veri tipi
+// Dynamic veri tipi python based çalışır. Değişken tipi castinge ihtiyaç duymadan aldığı veri tipi esasınca şekillenir.
