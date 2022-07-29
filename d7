@@ -1,0 +1,60 @@
+//rows video 13
+import 'package:flutter/material.dart';
+import 'metotlar.dart';
+void main() => runApp(MaterialApp(
+  home: Home()
+
+));
+
+void tikla()
+{
+  print("tıklandı metottan");
+}
+
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('YENİ UYGULAMA'),
+        centerTitle: true,
+        backgroundColor: Colors.red[600],
+      ),
+      body:Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Row(
+            children:<Widget> [
+              Text("hiyaa"),
+              Text("nber"),
+            ],
+          ),
+          Container(
+            padding: EdgeInsets.all(20),
+            color: Colors.blue,
+            child: Text("k1"),
+          ),
+          Container(
+            padding: EdgeInsets.all(30),
+            color: Colors.cyan,
+            child: Text("k2"),
+          ),
+          Container(
+            padding: EdgeInsets.all(40),
+            color: Colors.yellow,
+            child: Text("k3"),
+          ),
+        ],
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Text("tıklaa "),
+        backgroundColor: Colors.red[600],
+      ),
+    );
+  }
+}
