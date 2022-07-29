@@ -1,4 +1,6 @@
 //rows video 13
+
+//flutter outline mac-> command+scaffold a tıkla, windows ctrl.
 import 'package:flutter/material.dart';
 import 'metotlar.dart';
 void main() => runApp(MaterialApp(
