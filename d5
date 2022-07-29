@@ -1,0 +1,37 @@
+//d5-video11
+import 'package:flutter/material.dart';
+import 'metotlar.dart';
+void main() => runApp(MaterialApp(
+  home: Home()
+
+));
+
+void tikla()
+{
+  print("tıklandı metottan");
+}
+
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('YENİ UYGULAMA'),
+        centerTitle: true,
+        backgroundColor: Colors.red[600],
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(90.0),
+        child: Text("selam"),
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Text("tıklaa "),
+        backgroundColor: Colors.red[600],
+      ),
+    );
+  }
+}
