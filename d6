@@ -1,0 +1,47 @@
+//ROWS VİDEO 11
+import 'package:flutter/material.dart';
+import 'metotlar.dart';
+void main() => runApp(MaterialApp(
+  home: Home()
+
+));
+
+void tikla()
+{
+  print("tıklandı metottan");
+}
+
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('YENİ UYGULAMA'),
+        centerTitle: true,
+        backgroundColor: Colors.red[600],
+      ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Text("Merhaba"),
+          TextButton(onPressed: (){}, child:
+          Text("tıkla bana")),
+          Container(
+            color: Colors.green,
+            padding: EdgeInsets.all(20.0),
+            child: Text("containerdayım"),
+          ),
+        ],
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Text("tıklaa "),
+        backgroundColor: Colors.red[600],
+      ),
+    );
+  }
+}
